@@ -195,9 +195,9 @@ This AI-powered application uses a Convolutional Neural Network (CNN)
 to detect malaria parasites in blood cell images and assess infection severity.
 
 **Key Features:**
-- Binary Classification (Infected/Healthy)
-- Quantitative Severity Analysis
-- Treatment Recommendations
+   - Binary Classification (Infected/Healthy)
+   - Exploratory Severity Index (not clinically validated)
+   - For research and demonstration only
 """)
 
 st.sidebar.title("📊 Model Performance")
