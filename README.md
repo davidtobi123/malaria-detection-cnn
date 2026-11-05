@@ -3,7 +3,7 @@
 A deep learning system for automated malaria detection from blood smear images with quantitative severity classification.
 
 ## Features
-- 95.60% accuracy on NIH Malaria Dataset
+- 95.15% accuracy on NIH Malaria Dataset
 - Severity classification (Low/Moderate/High Parasitemia)
 - Streamlit web interface
 
