@@ -139,7 +139,9 @@ if uploaded_file is not None:
                     st.progress(min(confidence / 100, 1.0))
                     
                     st.write("---")
-                    st.subheader("📊 Severity Analysis")
+                    st.subheader("📊 Severity Analysis (Exploratory)")
+                    st.caption("Colour-based index, not clinically validated. "
+                               "It is affected by stain colour and must not guide treatment.")
                     
                     # Severity metrics
                     metric_col1, metric_col2 = st.columns(2)
@@ -200,14 +202,20 @@ to detect malaria parasites in blood cell images and assess infection severity.
 
 st.sidebar.title("📊 Model Performance")
 st.sidebar.success("""
-- **Accuracy:** 95.60%
-- **Precision:** 95.06%
-- **Recall:** 96.20%
-- **F1-Score:** 95.63%
-- **AUC:** 0.9892
+**Test split (2,000 images)**
+- **Accuracy:** 95.15%
+- **Precision:** 97.18%
+- **Recall:** 93.00%
+- **F1-Score:** 95.04%
+- **Specificity:** 97.30%
+- **AUC:** 0.9858
+
+**Unused images (17,558)**
+- **Accuracy:** 93.97%
+- **AUC:** 0.9798
 """)
 
-st.sidebar.title("🔬 Severity Levels")
+st.sidebar.title("🔬 Severity Levels (Exploratory)")
 st.sidebar.markdown("""
 | Level | Density |
 |-------|---------|
